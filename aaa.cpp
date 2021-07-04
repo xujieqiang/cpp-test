@@ -11,6 +11,18 @@ long njie(int n) {
     }
     return s;
 }
+void ph() {
+    cout << "+";
+    for (int i = 1; i < 9; i++) {
+        cout << "-";
+    }
+    cout << "+";
+}
+void ps() {
+    for (int i = 0; i < 8; i++) {
+        cout << "-";
+    }
+}
 
 int main()
 {
@@ -27,12 +39,23 @@ int main()
         }
         cout << "\n";
     }
-    int n = 0;
-    scanf_s("%d", &n);
+    int n = 5;
+    //scanf_s("%d", &n);
     long x = 1;
     x = njie(n);
-    cout << x << "\n ";
+    cout << x << "\n ";    
+
+    ph();
+    cout << "\n";
+    cout << " |        |\n" << " ";
+    cout << "|";
+    cout << " Mr Xu  " << "|\n";
+    cout << " |        |\n"<<" ";
+    ph();
+
     return 0;
+
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
